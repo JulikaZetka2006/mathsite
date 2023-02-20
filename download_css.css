@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+	background-image: url(../img/e.jpg);
+	font-family: 'Poppins', sans-serif;
+}
+.container {
+	margin: 0px 166px;
+}
+.header-line {
+	padding-top: 1px;
+	display: flex;
+	align-items: center;
+}
+.nav-item {
+	color: #000000;
+	text-decoration: none;
+	font-size: 20px;
+	margin-right: 70px;
+
+}
+.nav-donwload {
+	color: #00ff00;
+	text-decoration: none;
+	font-size: 20px;
+	margin-right: 70px;
+}
+.cameramath {
+	color: #000000;
+	font-size: 43px;
+	margin-right: 300px;
+}
+.header-title {
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	position: absolute;
+	right: 270px;
+	margin-top: 60px;
+}
+.header-subtitle {
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 400px;
+}
+.header-down {
+	display:flex;
+}
+.photo {
+	font-weight: 400px;
+	position: absolute;
+	right: 1100px;
+	margin-top: 0px;
+}
+.appstore {
+    font-weight: 400px;
+	position: absolute;
+	right: 355px;
+	margin-top: 50px;
+}
+.googleplay {
+    font-weight: 400px;
+	position: absolute;
+	right: 120px;
+	margin-top: 50px;
+}
+.language {
+	border-radius: 30px;
+}
+.cm {
+	font-size: 40px;
+	position: absolute;
+	left: 170px;
+	bottom: 300px;
+	
+}
+.text {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	position: absolute;
+	top: 70px;
+}
+.as {
+	position: absolute;
+	top: 80px;
+	display:flex;
+}
+.termofuse {
+	text-decoration: none;
+	color: #000000;
+	font-size: 17px;
+	position: absolute;
+	top: 300px;
+	font-family: 'Roboto', sans-serif;
+}
+.privacypolicy {
+	text-decoration: none;
+	color: #000000;
+	font-size: 17px;
+	left: 150px;
+	position: absolute;
+	top: 300px;
+	font-family: 'Roboto', sans-serif;
+}
+.network {
+	position: absolute;
+	left: 1000px;
+    display:flex;
+    bottom: 0px;
+
+}
+.item {
+	margin-right: 30px;
+	margin-top: 30px;
+}
+.gp {
+	left: 210px;
+	position: absolute;
+}
+.supporthelp {
+	position: absolute;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	text-decoration: none;
+	color: #000000;
+	margin-top: 160px;
+}
+.link {
+	position: absolute;
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	text-decoration: none;
+	color: #000000;
+	margin-top: 200px;
+}
