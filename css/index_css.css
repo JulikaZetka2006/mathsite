@@ -1,0 +1,405 @@
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.wrapperfirst{
+    max-width: 1075px;
+    margin: 0 auto;
+    
+}
+.header{
+    padding-top: 20px;
+    padding-bottom: 28px;
+    background-color: #FEF200;
+}
+.menu{
+    display: flex;
+}
+.name{
+    font-size: 32px;
+}
+.menuList{
+    display: flex;
+    gap:59px;
+    align-items: center;
+    margin-left:auto;
+}
+.menuList a{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.language{
+    display: flex;
+    background-color:#fcfcfc;
+    border: 1px solid #fcfcfc;
+    border-radius: 50px;
+    gap:3px;
+    padding: 6px 19px;
+}
+select{
+    text-decoration: none;
+    border: none;
+    background-color:#fcfcfc;
+}
+
+.sectionSolving{
+    padding-bottom: 31px;
+    background-color: #FEF200;
+}
+.solving{
+    display: flex;
+    gap:50px;
+    align-items: center;
+}
+h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+h2{
+    font-size: 40px;
+}
+.solving_text{
+    max-width: 567px;
+
+}
+p{
+    font-size:30px;
+    color: black;
+}
+.descriptionP{
+    margin: 34px 0 46px 0;
+}
+.link{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.wrappertwoaAndThree{
+    max-width: 1276px;
+    margin: 0 auto;
+}
+.sectionTutors{
+    padding-top: 84px;
+    padding-bottom: 56px;
+    background-color: #F8F9FB;
+}
+.tutors{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1194px;
+    margin-right: auto;
+}
+.sectionTutors_menu{
+    display: flex;
+    width: 468px;
+    height: 113px;
+    background-color: white;
+    margin-bottom: 16px;
+    align-items: center;
+}
+.sectionTutors_menu p{
+    font-size: 20px;
+}
+[class*= sectionTutors_menu_item]{
+    display: flex;  
+    align-items: center;
+}
+.sectionTutors_menu_item_1,.sectionTutors_menu_item_2{
+    gap: 28px;
+    margin-left: 40px;
+    max-width: 298px;
+}
+.sectionTutors_menu_item_3{
+    gap: 26px;
+    margin-left: 30px;
+}
+.sectionTutors_menu_item_4{
+    gap: 24px;
+    margin-left: 35px;
+}
+.sectionTutors_menu:hover{
+    background-color:#FEF200;
+    border-radius: 25px;
+}
+
+.sectionDescription{
+    background-color:#FEF200;
+    padding-top: 55px;
+    padding-bottom: 59px;
+}
+.levelsOfMath, .aboutApp{
+    font-size: 40px;
+    text-align: center;
+    font-weight:bold;
+}
+.descriptionImage{
+    max-width:1195px;
+    margin-left: auto;
+}
+
+.sectionComments{
+    padding-top:70px;
+    padding-bottom:61px;
+    background-color: #F8F9FB;
+    
+}
+.commentsAboutApp{
+    margin-top: 63px;
+    display: flex;
+    gap: 40px;
+    max-width: 1339px;
+    margin: 0 auto;
+    align-items: center;
+}
+.sectionComments p{
+    font-size:16px;
+}
+.comment1{
+    background: url(../img/jace.png) no-repeat;
+    width: 350px;
+    height: 420px;
+    border-radius: 6px;
+}
+.commentJace{
+    padding: 115px 0px 0px 24px;
+}
+.jace{
+    max-width: 298px;
+}
+.nameAndstars{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 75px;
+}
+.bigComment{
+    background-image:url(../img/isebelle.png);
+    width: 469px;
+    height: 431px;
+}
+.commentisebelle{
+    padding: 129px 28px;
+}
+.isebelle{
+    max-width: 324px;
+}
+.nameAndstarsBig{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 109px;
+    padding-bottom: 20px;
+}
+
+.sectionChildren{
+    padding-left: 40px;
+    background-color:#FEF200;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.wrapperfive{
+    max-width: 1339px;
+    margin: 0 auto;
+}
+.wrapperfive_helper{
+    max-width: 1269px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.sectionChildren_textAndImg{
+    padding-top: 60px;
+}
+.sectionChildren_textAndImg_text{
+    padding-left: 44px;
+    background-image: url(../img/bg_section5.png);
+    width: 494px;
+    height: 216px;
+
+}
+.sectionChildren_textAndImg_text_h2{
+    padding-bottom: 28px;
+}
+.sectionChildren_textAndImg_text_p{
+    font-size: 20px;
+}
+.sectionChildren_textAndImg_link{
+    padding-top: 58px;
+}
+.btn{
+    background-color:black;
+    color: #D3D3D3;
+    width:175;
+    height: 44px;
+    align-items: center;
+    padding: 13px 26px 15px 24px;
+    border-radius:20px;
+}
+.sectionChildren_textAndImg_link{
+    padding-left: 44px;
+}
+.sectionChildrenSix{
+    background: url(../img/bg_section6.png) no-repeat;
+    background-size:100%;
+}
+
+.sectionSeven{
+    background-color: #F8F9FB;
+}
+.wrapperSixAndSeven{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-top: 62px;
+    padding-bottom: 87px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapperSix_text{
+    max-width: 295px;
+}
+.wrapperSix_text p{
+    color: #D3D3D3;
+    font-size: 22px;
+}
+.wrapperSix_text_p{
+    padding-bottom: 55px;
+}
+.wrapperSix_slider{
+    background-color: white;
+    max-width: 686px;
+    padding: 30px 86px 11px 41px;
+    border-radius: 25px;
+}
+.item{
+    display: flex;
+    gap: 16px;
+    padding-bottom: 16px;
+}
+.item img{
+    width: 24px;
+    height: 24px;
+}
+.item p{
+    font-size: 16px;
+}
+.support{
+    width: 1127px;
+    display: flex;
+    justify-content: space-between;
+}
+.support_text_h2{
+    padding-bottom: 25px;
+}
+.support_text h2{
+    font-size: 32px;
+}
+.support_text_p{
+    padding-bottom: 41px;
+}
+.support_text p{
+    font-size: 18px;
+}
+.supportAndHelp_item{
+    display: flex;
+    gap: 41px;
+    padding-bottom: 59px;
+}
+.supportAndHelp_item img{
+    width: 37px;
+    height: 38px;
+}
+.supportAndHelp{
+    font-size: 16px;
+    padding-bottom: 45px;
+    color: #969696;
+    display: block;
+}
+.gmail{
+    font-size: 32px;
+    display: block;
+    color: black;
+}
+
+footer{
+    background-color: #F8F9FB;
+}
+.tempOfUse{
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    padding: 62px 0 65px 0;
+}
+.tempOfUse a{
+    font-size: 16px;
+    color: #969696;
+}

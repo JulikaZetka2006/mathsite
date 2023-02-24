@@ -1,0 +1,326 @@
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.wrapperfirst{
+    max-width: 1075px;
+    margin: 0 auto;
+
+}
+.header{
+    padding-top: 20px;
+    padding-bottom: 28px;
+    
+}
+.menu{
+    display: flex;
+}
+.name{
+    font-size: 32px;
+}
+.menuList{
+    display: flex;
+    gap:59px;
+    align-items: center;
+    margin-left:auto;
+}
+.menuList a{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.yellow{
+    color: #FEF200;
+}
+.language{
+    display: flex;
+    align-items: center;
+    background-color:#fcfcfc;;
+    border: 1px solid #D3D3D3;
+    border-radius: 50px;
+    gap:3px;
+    padding: 6px 19px;
+}
+select{
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    background-color:#fcfcfc;;
+}
+.tutorial{
+    background: url(../img/bg.jpg) no-repeat;
+    background-size:100%;
+}
+.text{
+    max-width: 360px;
+    margin: 0 auto;
+    padding-top: 29px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.questions{
+  padding-bottom: 18px;
+  font-size: 32px;
+
+}
+.btn{
+  background-color:black;
+  color: #D3D3D3;
+  width:175;
+  height: 44px;
+  align-items: center;
+  padding: 13px 26px 15px 24px;
+  border-radius:20px;
+}
+
+.wrappertwo{
+    max-width: 938px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.feature{
+    display: flex;
+    gap: 11px;
+    width: 170px;
+    padding: 30px 0;
+    align-items: center;
+}
+.feature a{
+    color: black;
+    font-size: 16px;
+}
+.sectionSortByAndCommon{
+    background-color:  #F8F9FB;
+}
+.sortByAndCommon{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 55px;
+    
+}
+.sortBy{
+    max-width: 249px;
+}
+.sortByAndCommon_h3{
+    font-size: 22px;
+    padding-top: 28px;
+    padding-bottom: 35px;
+}
+.sortBy_items{
+    font-size: 20px;
+    display: block;
+    background-color: white;
+    
+}
+[class*="item_"]{
+    display: block;
+    margin-bottom: 23px;
+    width: 228px;
+    background-color: white;
+}
+.common{
+    width: 760px;
+}
+.allCards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.card{
+    max-width: 422px;
+    background-color: white;
+}
+.cardInside{
+    max-width: 305px;
+    padding: 36px 30px 32px 33px;
+}
+.cardInside h3{
+    font-size: 20px;
+    padding-top: 28px;
+}
+.cardInside p{
+    font-size: 16px;
+    padding-top: 11px;
+    padding-bottom: 22px;
+    color: #A3ADB5;
+}
+[class*="_link"]{
+    font-size: 12px;
+    padding: 5px 8px;
+    color: black;
+    text-decoration: none;
+}
+.listLink{
+    display: flex;
+    width: 246px;
+    justify-content:space-between;
+}
+.listLink2{
+    display: flex;
+    width: 293px;
+    justify-content:space-between;
+}
+.knowAndexample_link{
+    background-color:#F4F4F4;
+}
+.calculator_link{
+    color: #DA9352;
+    background-color: #FEE4DE;
+}
+.video_link{
+    background-color: #FFFCD6;
+    color: #D7BD6F;
+}
+
+
+
+.sectionSeven{
+    background-color: #F8F9FB;
+}
+.wrapperSixAndSeven{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-top: 62px;
+    padding-bottom: 87px;
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    display: flex;
+    gap: 16px;
+    padding-bottom: 16px;
+}
+.item img{
+    width: 24px;
+    height: 24px;
+}
+.item p{
+    font-size: 16px;
+}
+.support{
+    width: 1127px;
+    display: flex;
+    justify-content: space-between;
+}
+.support_text_h2{
+    padding-bottom: 25px;
+}
+.support_text h2{
+    font-size: 32px;
+}
+.support_text_p{
+    padding-bottom: 41px;
+}
+.support_text p{
+    font-size: 18px;
+}
+.link{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.supportAndHelp_item{
+    display: flex;
+    gap: 41px;
+    padding-bottom: 59px;
+}
+.supportAndHelp_item img{
+    width: 37px;
+    height: 38px;
+}
+.supportAndHelp{
+    font-size: 16px;
+    padding-bottom: 45px;
+    color: #969696;
+    display: block;
+}
+.gmail{
+    font-size: 32px;
+    display: block;
+    color: black;
+}
+
+footer{
+    background-color: #F8F9FB;
+}
+.tempOfUse{
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    padding: 62px 0 65px 0;
+}
+.tempOfUse a{
+    font-size: 16px;
+    color: #969696;
+}
